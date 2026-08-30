@@ -1,6 +1,6 @@
 # common
-git clone https://github.com/Aciss21/device_xiaomi_sm6150-common.git -b 16.2 device/xiaomi/sm6150-common
-git clone https://github.com/Aciss21/vendor_xiaomi_sm6150-common.git -b 16.2 vendor/xiaomi/sm6150-common
+git clone https://github.com/Aciss21/device_xiaomi_sm6150-common.git -b 17 device/xiaomi/sm6150-common
+git clone https://github.com/Aciss21/vendor_xiaomi_sm6150-common.git -b 17 vendor/xiaomi/sm6150-common
 
 # device
 git clone https://github.com/Aciss21/vendor_xiaomi_courbet.git -b 16.2 vendor/xiaomi/courbet
