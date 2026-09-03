@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 TARGET_SCREEN_WIDTH := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -26,7 +26,7 @@ TARGET_ENABLE_BLUR := true
 TARGET_USES_LEICA_HOLY45 := true
 
 PRODUCT_DEVICE := courbet
-PRODUCT_NAME := lineage_courbet
+PRODUCT_NAME := shinkai_courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite
 PRODUCT_MANUFACTURER := Xiaomi
@@ -35,4 +35,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="courbet_global-user 13 RKQ1.210614.002 14.0.4.0.TKQMIXM release-keys" \
-    BuildFingerprint=Xiaomi/courbet_global/courbet:13/RKQ1.210614.002/V14.0.4.0.TKQMIXM:user/release-keys
+    BuildFingerprint=Xiaomi/courbet_global/courbet:13/RKQ1.210614.002/V14.0.4.0.TKQMIXM:user/release-keys \
+    SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
+    SystemName=$(PRODUCT_SYSTEM_NAME) \
+    ProductModel=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
